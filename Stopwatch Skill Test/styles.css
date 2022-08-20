@@ -1,0 +1,70 @@
+:root {
+  --clr-sky-blue: #54bab9;
+  --clr-bg: #e9dac1;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles  */
+body {
+  background-color: var(--clr-bg);
+  color: var(--clr-sky-blue);
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Styling to the whole container  */
+#stopwatch-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: currentColor 0.125em solid;
+  height: 100vh;
+}
+
+/* Styling to title */
+#title {
+  font-size: 5rem;
+  font-family: "Silkscreen", cursive;
+}
+
+/* Styling to time  */
+#time {
+  font-size: 3rem;
+  padding: 1.5rem;
+}
+
+/* Styling to buttons container  */
+#control-buttons {
+  display: grid;
+  gap: 1rem;
+}
+
+/* Styling to individual buttons */
+.neon-button {
+  font-size: 1.5rem;
+  display: inline-block;
+  cursor: pointer;
+  border: currentColor 0.125em solid;
+  padding: 0.15em 0.5em;
+  border-radius: 0.25em;
+
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.5), 0 0 0.125em currentColor;
+}
+
+/* For responsiveness of buttons  */
+@media (min-width: 40em) {
+  #control-buttons {
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .neon-button {
+    font-size: 2rem;
+  }
+}
