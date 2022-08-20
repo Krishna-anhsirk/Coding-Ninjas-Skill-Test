@@ -1,2 +1,2 @@
 # Coding-Ninjas-Skill-Test
-Projects on skill tests of Coding Ninjas
+These projects are the questions on skill tests of Coding Ninjas Web Development course
